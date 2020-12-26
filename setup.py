@@ -115,4 +115,6 @@ setup(
     ext_modules=ext_mod,
     py_modules=['pyinotify'],
     package_dir=package_dir,
+    entry_points = { 'console_scripts' :
+                     [ 'pyinotify = pyinotify:command_line', ] },
     )
